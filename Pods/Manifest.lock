@@ -1,10 +1,13 @@
 PODS:
+  - EAIntroView (2.4.0)
   - XDKAirMenu (1.1.0)
 
 DEPENDENCIES:
+  - EAIntroView (~> 2.4.0)
   - XDKAirMenu (~> 1.1.0)
 
 SPEC CHECKSUMS:
+  EAIntroView: 0d386ae6ebdc84cba58af7c0eb1044bff2f61bd2
   XDKAirMenu: 7ff2a93f74d020b137d9800af96e5061629b3f34
 
 COCOAPODS: 0.32.1

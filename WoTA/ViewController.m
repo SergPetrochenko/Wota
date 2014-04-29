@@ -29,6 +29,7 @@
     
     self.airMenuController = [XDKAirMenuController sharedMenu];
     self.airMenuController.airDelegate = self;
+
     //self.airMenuController.isMenuOnRight = TRUE;
     
     [self.view addSubview:self.airMenuController.view];
