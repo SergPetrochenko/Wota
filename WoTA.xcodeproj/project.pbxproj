@@ -21,6 +21,9 @@
 		0B2D1740190FF040007E0A07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2D1722190FF040007E0A07 /* UIKit.framework */; };
 		0B2D1748190FF040007E0A07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B2D1746190FF040007E0A07 /* InfoPlist.strings */; };
 		0B2D174A190FF040007E0A07 /* WoTATests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2D1749190FF040007E0A07 /* WoTATests.m */; };
+		0B9A72C9190FC8A800D754A0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9A72C6190FC8A800D754A0 /* FirstViewController.m */; };
+		0B9A72CA190FC8A800D754A0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9A72C8190FC8A800D754A0 /* SecondViewController.m */; };
+		C805EB6F76CD47CEBD5BAB80 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED3E00BF0584232A9D0420D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		0B2D1745190FF040007E0A07 /* WoTATests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WoTATests-Info.plist"; sourceTree = "<group>"; };
 		0B2D1747190FF040007E0A07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0B2D1749190FF040007E0A07 /* WoTATests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WoTATests.m; sourceTree = "<group>"; };
+		0B9A72C5190FC8A800D754A0 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		0B9A72C6190FC8A800D754A0 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		0B9A72C7190FC8A800D754A0 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		0B9A72C8190FC8A800D754A0 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1ED3E00BF0584232A9D0420D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9736663C0F004882AEE87383 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 				0B2D1721190FF040007E0A07 /* CoreGraphics.framework in Frameworks */,
 				0B2D1723190FF040007E0A07 /* UIKit.framework in Frameworks */,
 				0B2D171F190FF040007E0A07 /* Foundation.framework in Frameworks */,
+				C805EB6F76CD47CEBD5BAB80 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +96,7 @@
 				0B2D1743190FF040007E0A07 /* WoTATests */,
 				0B2D171D190FF040007E0A07 /* Frameworks */,
 				0B2D171C190FF040007E0A07 /* Products */,
+				9736663C0F004882AEE87383 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +116,7 @@
 				0B2D1720190FF040007E0A07 /* CoreGraphics.framework */,
 				0B2D1722190FF040007E0A07 /* UIKit.framework */,
 				0B2D173D190FF040007E0A07 /* XCTest.framework */,
+				1ED3E00BF0584232A9D0420D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +129,10 @@
 				0B2D1730190FF040007E0A07 /* Main.storyboard */,
 				0B2D1733190FF040007E0A07 /* ViewController.h */,
 				0B2D1734190FF040007E0A07 /* ViewController.m */,
+				0B9A72C5190FC8A800D754A0 /* FirstViewController.h */,
+				0B9A72C6190FC8A800D754A0 /* FirstViewController.m */,
+				0B9A72C7190FC8A800D754A0 /* SecondViewController.h */,
+				0B9A72C8190FC8A800D754A0 /* SecondViewController.m */,
 				0B2D1736190FF040007E0A07 /* Images.xcassets */,
 				0B2D1725190FF040007E0A07 /* Supporting Files */,
 			);
@@ -159,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B2D174D190FF040007E0A07 /* Build configuration list for PBXNativeTarget "WoTA" */;
 			buildPhases = (
+				FD6FD2EDD47F4BF2831302FF /* Check Pods Manifest.lock */,
 				0B2D1717190FF040007E0A07 /* Sources */,
 				0B2D1718190FF040007E0A07 /* Frameworks */,
 				0B2D1719190FF040007E0A07 /* Resources */,
+				048C74D253444857BB5CB60A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +217,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Sergei Petrochenko";
 				TargetAttributes = {
+					0B2D171A190FF040007E0A07 = {
+						DevelopmentTeam = 987U6RLEYN;
+					};
 					0B2D173B190FF040007E0A07 = {
 						TestTargetID = 0B2D171A190FF040007E0A07;
 					};
@@ -244,14 +265,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		048C74D253444857BB5CB60A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD6FD2EDD47F4BF2831302FF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0B2D1717190FF040007E0A07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9A72CA190FC8A800D754A0 /* SecondViewController.m in Sources */,
 				0B2D1735190FF040007E0A07 /* ViewController.m in Sources */,
 				0B2D172F190FF040007E0A07 /* AppDelegate.m in Sources */,
 				0B2D172B190FF040007E0A07 /* main.m in Sources */,
+				0B9A72C9190FC8A800D754A0 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,9 +431,11 @@
 		};
 		0B2D174E190FF040007E0A07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9736663C0F004882AEE87383 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WoTA/WoTA-Prefix.pch";
 				INFOPLIST_FILE = "WoTA/WoTA-Info.plist";
@@ -388,9 +446,11 @@
 		};
 		0B2D174F190FF040007E0A07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9736663C0F004882AEE87383 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WoTA/WoTA-Prefix.pch";
 				INFOPLIST_FILE = "WoTA/WoTA-Info.plist";
@@ -460,6 +520,7 @@
 				0B2D174F190FF040007E0A07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B2D1750190FF040007E0A07 /* Build configuration list for PBXNativeTarget "WoTATests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +529,7 @@
 				0B2D1752190FF040007E0A07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
